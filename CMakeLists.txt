@@ -119,17 +119,14 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-catkin_install_python(PROGRAMS scripts/doppler_fft_viz.py
+catkin_install_python(PROGRAMS 
+  scripts/angle_fft_viz.py
+  scripts/doppler_fft_viz.py
+  scripts/numpy_talker.py
+  scripts/radarbook_pub.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
-catkin_install_python(PROGRAMS scripts/numpy_talker.py
-  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-)
-
-catkin_install_python(PROGRAMS scripts/radarbook_pub.py
-  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-)
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
