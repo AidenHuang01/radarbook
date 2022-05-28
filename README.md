@@ -15,5 +15,8 @@ catkin_make
 ## Run
 Connect the Radar to PC using ethernet cable and power up the radar.
 ```
-rosrun radarbook <script>
+# launch publisher:
+rosrun radarbook radarbook_pub.py
+# launch doppler subscriber
+rosrun radarbook doppler_fft_viz.py
 ```
